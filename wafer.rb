@@ -240,6 +240,7 @@ class Wafer
     new_face = entities2.add_face [@corner_lfb[0]-0.1, @corner_lfb[1]-0.1, @height.mm] , [@corner_rbt[0]+0.1, @corner_lfb[1]-0.1, @height.mm] , [@corner_rbt[0]+0.1, @corner_rbt[1]+0.1, @height.mm], [@corner_lfb[0]-0.1, @corner_rbt[1]+0.1, @height.mm]
 
     selection.each do |entity| 
+      puts entity.inspect
       if entity.typename == "Face"
         entity.edges.each do |edge|
     
